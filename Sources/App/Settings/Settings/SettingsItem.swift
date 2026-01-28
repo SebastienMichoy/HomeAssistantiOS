@@ -6,6 +6,7 @@ enum SettingsItem: String, Hashable, CaseIterable {
     case general
     case gestures
     case location
+    case locationV2
     case notifications
     case sensors
     case nfc
@@ -25,6 +26,7 @@ enum SettingsItem: String, Hashable, CaseIterable {
         case .general: return L10n.SettingsDetails.General.title
         case .gestures: return L10n.Gestures.Screen.title
         case .location: return L10n.Settings.DetailsSection.LocationSettingsRow.title
+        case .locationV2: return "Location v2"
         case .notifications: return L10n.Settings.DetailsSection.NotificationSettingsRow.title
         case .sensors: return L10n.SettingsSensors.title
         case .nfc: return L10n.Nfc.List.title
@@ -50,6 +52,8 @@ enum SettingsItem: String, Hashable, CaseIterable {
             case .gestures:
                 MaterialDesignIconsImage(icon: .gestureIcon, size: 24)
             case .location:
+                MaterialDesignIconsImage(icon: .crosshairsGpsIcon, size: 24)
+            case .locationV2:
                 MaterialDesignIconsImage(icon: .crosshairsGpsIcon, size: 24)
             case .notifications:
                 MaterialDesignIconsImage(icon: .bellOutlineIcon, size: 24)
@@ -99,6 +103,8 @@ enum SettingsItem: String, Hashable, CaseIterable {
             GesturesSetupView()
         case .location:
             SettingsLocationView()
+        case .locationV2:
+            LocationSettingsView()
         case .notifications:
             SettingsNotificationsView()
         case .sensors:
@@ -142,7 +148,7 @@ enum SettingsItem: String, Hashable, CaseIterable {
     }
 
     static var generalItems: [SettingsItem] {
-        [.general, .gestures, .location, .notifications]
+        [.general, .gestures, .location, .locationV2, .notifications]
     }
 
     static var integrationItems: [SettingsItem] {
