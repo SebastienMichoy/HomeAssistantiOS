@@ -900,6 +900,7 @@ Home Assistant is open source, advocates for privacy and runs locally in your ho
 "settings_details.location.notifications.push_notification.title" = "Pushed Location Request Notifications";
 "settings_details.location.notifications.url_scheme.title" = "URL Scheme Location Notifications";
 "settings_details.location.notifications.x_callback_url.title" = "X-Callback-URL Location Notifications";
+"settings_details.location.body" = "Control location tracking and manage Home Assistant zones for presence detection.";
 "settings_details.location.title" = "Location";
 "settings_details.location.update_location" = "Update Location";
 "settings_details.location.updates.background.title" = "Background fetch";

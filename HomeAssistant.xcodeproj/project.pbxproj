@@ -25,6 +25,7 @@
 /* Begin PBXBuildFile section */
 		00C267608DCC88B783816CBF /* FanIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6888525DCF492642BA7EA3 /* FanIntent.swift */; };
 		01537D4F2F2AA3A400978698 /* LocationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01537D4D2F2AA3A400978698 /* LocationSettingsView.swift */; };
+		01537D522F2AB58000978698 /* AppleLikeListTopRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01537D502F2AB58000978698 /* AppleLikeListTopRowHeader.swift */; };
 		07B254BADB23F6A60E82D615 /* Pods_iOS_Extensions_Matter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943E024774CF54EADF771379 /* Pods_iOS_Extensions_Matter.framework */; };
 		1100D51D2496AECE00B1073C /* PermissionStatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100D51C2496AECE00B1073C /* PermissionStatusRow.swift */; };
 		1100D51F2496F63400B1073C /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100D51E2496F63400B1073C /* ThemeColors.swift */; };
@@ -811,7 +812,6 @@
 		4278C9C22C8F226500A7B5F4 /* GuaranteedMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278C9C02C8F226500A7B5F4 /* GuaranteedMessages.swift */; };
 		4278CB812D01E61D00CFAAC9 /* GesturesSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278CB802D01E61D00CFAAC9 /* GesturesSetupView.swift */; };
 		4278CB852D01F0B200CFAAC9 /* GesturesSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278CB842D01F0B200CFAAC9 /* GesturesSetupViewModel.swift */; };
-		4278CB882D01F65300CFAAC9 /* AppleLikeListTopRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278CB872D01F65300CFAAC9 /* AppleLikeListTopRowHeader.swift */; };
 		4278CB892D01F81B00CFAAC9 /* AppGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4278CB822D01F09400CFAAC9 /* AppGesture.swift */; };
 		4278DFD22B45C7AE0087C9D7 /* Core.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4278DFAF2B45C6680087C9D7 /* Core.strings */; };
 		4278DFD32B45C7AE0087C9D7 /* Core.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4278DFAF2B45C6680087C9D7 /* Core.strings */; };
@@ -1822,6 +1822,7 @@
 
 /* Begin PBXFileReference section */
 		01537D4D2F2AA3A400978698 /* LocationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingsView.swift; sourceTree = "<group>"; };
+		01537D502F2AB58000978698 /* AppleLikeListTopRowHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLikeListTopRowHeader.swift; sourceTree = "<group>"; };
 		0194775556E59C6E64735937 /* Pods-watchOS-Shared-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS-Shared-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS-Shared-watchOS/Pods-watchOS-Shared-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		05C398FF0F9BA764B69CA36B /* Pods-iOS-Extensions-NotificationService.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Extensions-NotificationService.beta.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Extensions-NotificationService/Pods-iOS-Extensions-NotificationService.beta.xcconfig"; sourceTree = "<group>"; };
 		05E6CF2BD91E8443547F3026 /* Pods-iOS-Extensions-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Extensions-Today.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Extensions-Today/Pods-iOS-Extensions-Today.release.xcconfig"; sourceTree = "<group>"; };
@@ -2461,7 +2462,6 @@
 		4278CB802D01E61D00CFAAC9 /* GesturesSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesSetupView.swift; sourceTree = "<group>"; };
 		4278CB822D01F09400CFAAC9 /* AppGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGesture.swift; sourceTree = "<group>"; };
 		4278CB842D01F0B200CFAAC9 /* GesturesSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesSetupViewModel.swift; sourceTree = "<group>"; };
-		4278CB872D01F65300CFAAC9 /* AppleLikeListTopRowHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLikeListTopRowHeader.swift; sourceTree = "<group>"; };
 		4278DFB02B45C6680087C9D7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Core.strings; sourceTree = "<group>"; };
 		4278DFB12B45C6680087C9D7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Core.strings"; sourceTree = "<group>"; };
 		4278DFB22B45C6680087C9D7 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Core.strings; sourceTree = "<group>"; };
@@ -3608,6 +3608,14 @@
 				01537D4D2F2AA3A400978698 /* LocationSettingsView.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		01537D512F2AB58000978698 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				01537D502F2AB58000978698 /* AppleLikeListTopRowHeader.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		1100D5222497578800B1073C /* TestNotifications */ = {
@@ -5156,7 +5164,6 @@
 			children = (
 				4278CB802D01E61D00CFAAC9 /* GesturesSetupView.swift */,
 				4278CB842D01F0B200CFAAC9 /* GesturesSetupViewModel.swift */,
-				4278CB872D01F65300CFAAC9 /* AppleLikeListTopRowHeader.swift */,
 				429481EC2DA943E700A8B468 /* ListPicker.swift */,
 			);
 			path = Gestures;
@@ -6830,6 +6837,7 @@
 		B661FB6B226BCC8500E541DD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				01537D512F2AB58000978698 /* Common */,
 				01537D4E2F2AA3A400978698 /* Location */,
 				4257EA912F1790DE00D81506 /* EntityPicker */,
 				429AFE5A2DB7BE3200AF0836 /* General */,
@@ -9229,7 +9237,6 @@
 				42F1DA6D2B4ED29C002729BC /* CarPlayPaginatedListTemplate.swift in Sources */,
 				11DA6B4B27137A60008ADFAF /* InputAccessoryView.swift in Sources */,
 				42DF7DE02EC53D85003F3C4A /* ServersListView.swift in Sources */,
-				4278CB882D01F65300CFAAC9 /* AppleLikeListTopRowHeader.swift in Sources */,
 				42F5C0882F02BCD700C50310 /* FanIntent.swift in Sources */,
 				42C0F7CC2D47B47F00BD5C76 /* IconPicker.swift in Sources */,
 				42DFE86F2EFA26D50058DADB /* AssistSettingsView.swift in Sources */,
@@ -9393,6 +9400,7 @@
 				11C05F2D254919210031D038 /* AccountInitialsImage.swift in Sources */,
 				B605C891226E9DAC00EF46DD /* Permissions.swift in Sources */,
 				42B7BFF12E97D1540056BADC /* HomeNetworkInputViewModel.swift in Sources */,
+				01537D522F2AB58000978698 /* AppleLikeListTopRowHeader.swift in Sources */,
 				425573D32B55770D00145217 /* CarPlayDomainsListViewModel.swift in Sources */,
 				1169B7AD25AA76E30035F2AE /* MaterialDesignIcons+Eureka.swift in Sources */,
 				425573EB2B588FFB00145217 /* CarPlayListItemProvider.swift in Sources */,

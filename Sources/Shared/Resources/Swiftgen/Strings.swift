@@ -3249,6 +3249,8 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "settings_details.legacy_actions.title") }
     }
     public enum Location {
+      /// Control location tracking and manage Home Assistant zones for presence detection.
+      public static var body: String { return L10n.tr("Localizable", "settings_details.location.body") }
       /// Location
       public static var title: String { return L10n.tr("Localizable", "settings_details.location.title") }
       /// Update Location
