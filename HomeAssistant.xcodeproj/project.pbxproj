@@ -26,6 +26,7 @@
 		00C267608DCC88B783816CBF /* FanIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6888525DCF492642BA7EA3 /* FanIntent.swift */; };
 		01537D4F2F2AA3A400978698 /* LocationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01537D4D2F2AA3A400978698 /* LocationSettingsView.swift */; };
 		01537D522F2AB58000978698 /* AppleLikeListTopRowHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01537D502F2AB58000978698 /* AppleLikeListTopRowHeader.swift */; };
+		01537D542F2BA61100978698 /* LocationSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01537D532F2BA61100978698 /* LocationSettingsViewModel.swift */; };
 		07B254BADB23F6A60E82D615 /* Pods_iOS_Extensions_Matter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943E024774CF54EADF771379 /* Pods_iOS_Extensions_Matter.framework */; };
 		1100D51D2496AECE00B1073C /* PermissionStatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100D51C2496AECE00B1073C /* PermissionStatusRow.swift */; };
 		1100D51F2496F63400B1073C /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100D51E2496F63400B1073C /* ThemeColors.swift */; };
@@ -1823,6 +1824,7 @@
 /* Begin PBXFileReference section */
 		01537D4D2F2AA3A400978698 /* LocationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingsView.swift; sourceTree = "<group>"; };
 		01537D502F2AB58000978698 /* AppleLikeListTopRowHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLikeListTopRowHeader.swift; sourceTree = "<group>"; };
+		01537D532F2BA61100978698 /* LocationSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingsViewModel.swift; sourceTree = "<group>"; };
 		0194775556E59C6E64735937 /* Pods-watchOS-Shared-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-watchOS-Shared-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-watchOS-Shared-watchOS/Pods-watchOS-Shared-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		05C398FF0F9BA764B69CA36B /* Pods-iOS-Extensions-NotificationService.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Extensions-NotificationService.beta.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Extensions-NotificationService/Pods-iOS-Extensions-NotificationService.beta.xcconfig"; sourceTree = "<group>"; };
 		05E6CF2BD91E8443547F3026 /* Pods-iOS-Extensions-Today.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Extensions-Today.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Extensions-Today/Pods-iOS-Extensions-Today.release.xcconfig"; sourceTree = "<group>"; };
@@ -3606,6 +3608,7 @@
 			isa = PBXGroup;
 			children = (
 				01537D4D2F2AA3A400978698 /* LocationSettingsView.swift */,
+				01537D532F2BA61100978698 /* LocationSettingsViewModel.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -9206,6 +9209,7 @@
 				42E00D132E1E7807006D140D /* NotificationPermissionRequestView.swift in Sources */,
 				11DE823024FAE66F00E636B8 /* UIWindow+Additions.swift in Sources */,
 				42F5C0852F02BBA000C50310 /* AppIntentProvider.swift in Sources */,
+				01537D542F2BA61100978698 /* LocationSettingsViewModel.swift in Sources */,
 				42FCCFFB2B9B1C310057783F /* ThreadTransferCredentialToHAViewModel.swift in Sources */,
 				4296C36E2B90DB640051B63C /* PerformAction.swift in Sources */,
 				4210CD102F16906800B71FB9 /* EntityRowView.swift in Sources */,
