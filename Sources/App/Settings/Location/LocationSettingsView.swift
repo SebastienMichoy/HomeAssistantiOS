@@ -25,6 +25,20 @@ struct LocationSettingsView: View {
                 backgroundRefreshRow
                 #endif
             }
+
+            Section {
+                locationHistoryRow
+                updateLocationRow
+            }
+        }
+        .alert(
+            L10n.errorLabel,
+            isPresented: $viewModel.showErrorAlert,
+            presenting: viewModel.errorMessage
+        ) { _ in
+            Button(L10n.okLabel, role: .cancel) {}
+        } message: { message in
+            Text(message)
         }
     }
 
@@ -82,5 +96,31 @@ struct LocationSettingsView: View {
             }
         }
         .buttonStyle(.plain)
+    }
+
+    // MARK: - Location History
+
+    private var locationHistoryRow: some View {
+        NavigationLink {
+            LocationHistoryListView()
+        } label: {
+            Text(L10n.Settings.LocationHistory.title)
+        }
+    }
+
+    private var updateLocationRow: some View {
+        Button {
+            viewModel.updateLocation()
+        } label: {
+            HStack {
+                Text(L10n.SettingsDetails.Location.updateLocation)
+                    .foregroundStyle(.primary)
+                Spacer()
+                if viewModel.isUpdatingLocation {
+                    ProgressView()
+                }
+            }
+        }
+        .disabled(viewModel.isUpdatingLocation)
     }
 }

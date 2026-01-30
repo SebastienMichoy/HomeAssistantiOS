@@ -1,4 +1,5 @@
 import CoreLocation
+import PromiseKit
 import Shared
 import UIKit
 
@@ -22,6 +23,15 @@ final class LocationSettingsViewModel: NSObject, ObservableObject {
 
     /// The current background refresh status as a localized string.
     @Published private(set) var backgroundRefreshStatus: String = ""
+
+    /// Whether a location update is currently in progress.
+    @Published private(set) var isUpdatingLocation: Bool = false
+
+    /// Whether to show the error alert.
+    @Published var showErrorAlert: Bool = false
+
+    /// The error message to display in the alert.
+    @Published private(set) var errorMessage: String?
 
     // MARK: - Private Properties
 
@@ -102,6 +112,21 @@ final class LocationSettingsViewModel: NSObject, ObservableObject {
             locationManager.requestAlwaysAuthorization()
         } else {
             URLOpener.shared.openSettings(destination: .location, completionHandler: nil)
+        }
+    }
+
+    /// Triggers a manual location update.
+    func updateLocation() {
+        isUpdatingLocation = true
+
+        HomeAssistantAPI.manuallyUpdate(
+            applicationState: UIApplication.shared.applicationState,
+            type: .userRequested
+        ).ensure {
+            self.isUpdatingLocation = false
+        }.catch { error in
+            self.errorMessage = error.localizedDescription
+            self.showErrorAlert = true
         }
     }
 }
